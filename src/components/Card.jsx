@@ -1,11 +1,13 @@
 import React from 'react'
-
-const Card = () => {
+const Card = ({datos}) => {
+  const{nombre, apellido, password} = datos
   return (
-    <div>
-        <h3>Soy un componente Card</h3>
+    <div className="card">
+        <h5>Acceso correcto - Datos ingresados: </h5>
+        <li>Nombre: {nombre} </li>
+        <li>Apellido: {apellido}</li>
+        <li>Contraseña: {password}</li>
     </div>
   )
 }
-
 export default Card
